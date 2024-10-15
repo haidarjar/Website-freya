@@ -1,0 +1,305 @@
+:root {
+    --mainColor: #252734;
+    --secondaryColor: #333646;
+    --accsentColor: #FF9100;
+    --minoritasColor: #707070;
+    --teksColor: #ffffff;
+}
+
+body {
+    background-color: var(--mainColor);
+    min-height: 900px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section h1 {
+    color: var(--teksColor);
+    font-size: 2.5rem;
+}
+
+/* Style Navbar */
+
+.nav-link.active {
+    color: var(--accsentColor) !important;
+    font-weight: 700;
+}
+
+.nav-dark {
+    background-color: var(--secondaryColor) !important;
+    z-index: 3;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+
+/* Style Navbar selesai */
+
+/* Hero */
+
+.color-accsent {
+    color: var(--accsentColor);
+}
+
+#hero {
+    color: var(--teksColor);
+    min-height: 100vh;
+    padding-top: 65px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero h2 {
+    font-weight: 300;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+
+/* CTA */
+
+.btn-custom1 {
+    background-color: var(--accsentColor);
+    text-align: center;
+    color: #fff;
+    min-width: 150px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.btn-custom1:hover {
+    box-shadow: 0 0 5px rgba(255, 166, 0, 0.8);
+}
+
+/* End CTA */
+
+.social-icon img {
+    margin-right: 0.4rem;
+    margin-bottom: 10px;
+}
+
+.cv {
+    color: var(--teksColor);
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* Akhiran Hero */
+
+/* About */
+
+hr {
+    width: 35%;
+    height: 5px;
+    color: var(--accsentColor);
+    margin: 0 auto;
+    opacity: 100%;
+}
+
+#about {
+    height: 700px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    color: var(--teksColor);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
+.picture-1 img {
+    width: 30%;
+    position: absolute;
+    left: 10px;
+    top: 700px;
+}
+
+.picture-2 img {
+    width: 30%;
+    position: absolute;
+    right: 0px;
+    top: 850px;
+}
+
+.text-center span {
+    font-weight: 600;
+}
+/* Akhiran About */
+
+/* Hobbies */
+
+#myHobbies {
+    min-height: 600px;
+    width: 100%;
+    color: #fff;
+}
+
+#myHobbies img {
+    width: 12%;
+    margin: 27px 15px;
+}
+
+#myHobbies .card {
+    background-color: #414558;
+    height: 430px;
+}
+
+#myHobbies .fakta1 {
+    padding-top: -30px;
+    width: 120px;
+    
+}
+
+#myHobbies .card:hover {
+    background-color: var(--accsentColor);
+    cursor: pointer;
+}
+
+.fakta-konten {
+    margin-top: 120px;
+}
+
+
+/* Akhiran Hobbies */
+
+/* My photo */
+
+#myPhoto {
+    margin-top: -170px;
+    padding-top: 270px;
+    padding-bottom: 80px;
+    background-color: var(--secondaryColor);
+}
+
+#myPhoto p a {
+    color: var(--teksColor) !important;
+    text-decoration: none;
+}
+
+#myPhoto .potoPreya {
+    width: 49%;
+    padding: 10px;
+}
+
+/* end My photo */
+
+/* Idol Gallery */
+
+#idolGallery .container {
+    padding: 80px 30px;
+}
+
+/* end Idol Gallery */
+
+/* footer */
+
+.social-icon-2 img {
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+
+/* end footer */
+
+
+@media screen and (max-width : 1200px) {
+    #hero p {
+        font-size: .9rem;
+    }
+
+    #hero h1 {
+        font-size: 2.3rem;
+    }
+
+    #myHobbies .card p {
+        font-size: 0.9rem; 
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+
+    #hero .heroPict img {
+        width: 60%;
+    }
+
+    .social-icon {
+        left: 50%;
+        transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+    }
+
+    #hero .row {
+        padding-bottom: 75px;
+    }
+
+    #hero .hello {
+        margin-top: 20px;
+    }
+
+    .btn-custom1 {
+        width: 80%;
+    }
+
+    #about {
+        height: 800px;
+    }
+
+    #about p {
+        text-align: justify !important;
+    }
+
+    #about .picture-1 img {
+        width: 25%;
+        top: 710px;
+    }
+
+    #about .picture-2 img {
+        width: 23%;
+        top: 720px;
+    }
+
+    #myHobbies .card h3 {
+        font-size: 1.3rem;
+    } 
+
+    #myHobbies .card {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width : 576px) {
+    hr {
+        width: 75%;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    footer img {
+        width: 75px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width : 350px) {
+    #idolGallery .col-md-12 {
+        flex-direction: column !important;
+    }
+}
